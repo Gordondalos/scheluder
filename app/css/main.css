@@ -9283,4 +9283,5 @@ a:hover, a:focus, a:active, a:link {
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
+  display: none;
 }

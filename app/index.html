@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" ng-app>
+<html lang="en" ng-app="main">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -8,25 +8,28 @@
     <link rel="stylesheet" href="css/main.css">
     <title>Scheluder</title>
 </head>
-<body>
+<body ng-controller="mainController">
 <div class="container">
     <div class="row">
 
         <div class="add bk p-a-2 br">
 
             <h5 class="display-inline-block">Выберите группу</h5>
-            <a href="#">
+            <a ng-click="closePopap()" href="#">
                 <i class="fa fa-times-circle text-danger pull-xs-right" aria-hidden="true"></i>
             </a>
             <div class="clearfix"></div>
-            <form class="m-y-1" action="#">
-                <select class="form-control" name="group" id="group">
-                    <option value="1">Группа1</option>
-                    <option value="2">Группа2</option>
-                    <option value="3">Группа3</option>
+            <form class="m-y-1">
+                <select ng-model="groupSelect" class="form-control" name="group" id="group">
+                    <option
+                            ng-repeat="item in groups"
+                            value="{{item.groupName}}"
+                            >
+                        {{item.groupName}}
+                    </option>
                 </select>
                 <div class="clearfix m-y-1"></div>
-                <button class="btn btn-success pull-xs-right">Применить</button>
+                <button ng-click="hidePopap()" class="btn btn-success pull-xs-right">Применить</button>
 
             </form>
 
@@ -66,25 +69,39 @@
                                 <div>6:00</div>
                             </td>
                             <td>
-                                <div id="id_5_01"></div>
+                                <div>
+                                    <input class="form-control" id="id_5_01" ng-click="showPopap('id_5_01')" ng-model="id_5_01"  type="text">
+                                </div>
                             </td>
                             <td>
-                                <div id="id_5_02"></div>
+                                <div >
+                                    <input class="form-control" id="id_5_02" ng-click="showPopap('id_5_02')" ng-model="id_5_01"  type="text">
+                                </div>
                             </td>
                             <td>
-                                <div id="id_5_03"></div>
+                                <div >
+                                    <input class="form-control" id="id_5_03" ng-click="showPopap('id_5_03')" ng-model="id_5_01"  type="text">
+                                </div>
                             </td>
                             <td>
-                                <div id="id_5_04"></div>
+                                <div >
+                                    <input class="form-control" id="id_5_04" ng-click="showPopap('id_5_04')" ng-model="id_5_01"  type="text">
+                                </div>
                             </td>
                             <td>
-                                <div id="id_5_05"></div>
+                                <div>
+                                    <input class="form-control" id="id_5_05" ng-click="showPopap('id_5_05')" ng-model="id_5_01"  type="text">
+                                </div>
                             </td>
                             <td>
-                                <div id="id_5_06"></div>
+                                <div >
+                                    <input class="form-control" id="id_5_06" ng-click="showPopap('id_5_06')" ng-model="id_5_01"  type="text">
+                                </div>
                             </td>
                             <td>
-                                <div id="id_5_07"></div>
+                                <div >
+                                    <input class="form-control" id="id_5_07" ng-click="showPopap('id_5_07')" ng-model="id_5_01"  type="text">
+                                </div>
                             </td>
                         </tr>
                         <tr>
@@ -484,6 +501,7 @@
 
 
 <script src="../bower_components/jquery/dist/jquery.min.js"></script>
+<script src="js/tether.js"></script>
 <script src="../bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
 <script src="../bower_components/angular/angular.min.js"></script>
 <script src="js/common.js"></script>
