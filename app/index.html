@@ -18,8 +18,9 @@
             <a ng-click="closePopap()" href="#">
                 <i class="fa fa-times-circle text-danger pull-xs-right" aria-hidden="true"></i>
             </a>
+
             <div class="clearfix"></div>
-            <form class="m-y-1">
+            <form class="m-y-1 popap">
                 <select ng-model="groupSelect" class="form-control" name="group" id="group">
                     <option
                             ng-repeat="item in groups"
@@ -28,6 +29,7 @@
                         {{item.groupName}}
                     </option>
                 </select>
+
                 <div class="clearfix m-y-1"></div>
                 <button ng-click="hidePopap()" class="btn btn-success pull-xs-right">Применить</button>
 
@@ -35,467 +37,811 @@
 
         </div>
 
+        <form class="scheluder" ng-model="scheluder">
+            <table class="table">
+                <tr>
+                    <td>
+                        <div></div>
+                    </td>
+                    <td>
+                        <div>Пн</div>
+                    </td>
+                    <td>
+                        <div>Вт</div>
+                    </td>
+                    <td>
+                        <div>Ср</div>
+                    </td>
+                    <td>
+                        <div>Чт</div>
+                    </td>
+                    <td>
+                        <div>Пт</div>
+                    </td>
+                    <td>
+                        <div>Сб</div>
+                    </td>
+                    <td>
+                        <div>Вс</div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div>6:00</div>
+                    </td>
+                    <td>
+                        <div>
+                            <input class="form-control" name="id_6_01" ng-click="showPopap('id_6_01')" ng-model="id_6_01"
+                                   type="text">
+                        </div>
+                    </td>
+                    <td>
+                        <div>
+                            <input class="form-control" name="id_6_02" ng-click="showPopap('id_6_02')" ng-model="id_6_02"
+                                   type="text">
+                        </div>
+                    </td>
+                    <td>
+                        <div>
+                            <input class="form-control" name="id_6_03" ng-click="showPopap('id_6_03')" ng-model="id_6_03"
+                                   type="text">
+                        </div>
+                    </td>
+                    <td>
+                        <div>
+                            <input class="form-control" name="id_6_04" ng-click="showPopap('id_6_04')" ng-model="id_6_04"
+                                   type="text">
+                        </div>
+                    </td>
+                    <td>
+                        <div>
+                            <input class="form-control" name="id_6_05" ng-click="showPopap('id_6_05')" ng-model="id_6_05"
+                                   type="text">
+                        </div>
+                    </td>
+                    <td>
+                        <div>
+                            <input class="form-control" name="id_6_06" ng-click="showPopap('id_6_06')" ng-model="id_6_06"
+                                   type="text">
+                        </div>
+                    </td>
+                    <td>
+                        <div>
+                            <input class="form-control" name="id_6_07" ng-click="showPopap('id_6_07')" ng-model="id_6_07"
+                                   type="text">
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div>7:00</div>
+                    </td>
+                    <td>
+                        <div>
+                            <input class="form-control" name="id_7_01" ng-click="showPopap('id_7_01')" ng-model="id_7_01"
+                                   type="text">
+                        </div>
+                    </td>
+                    <td>
+                        <div>
+                            <input class="form-control" name="id_7_02" ng-click="showPopap('id_7_02')" ng-model="id_7_02"
+                                   type="text">
+                        </div>
+                    </td>
+                    <td>
+                        <div >
+                            <input class="form-control" name="id_7_03" ng-click="showPopap('id_7_03')" ng-model="id_7_03"
+                                   type="text">
+                        </div>
+                    </td>
+                    <td>
+                        <div>
+                            <input class="form-control" name="id_7_04" ng-click="showPopap('id_7_04')" ng-model="id_7_04"
+                                   type="text">
+                        </div>
+                    </td>
+                    <td>
+                        <div>
+                            <input class="form-control" name="id_7_05" ng-click="showPopap('id_7_05')" ng-model="id_7_05"
+                                   type="text">
+                        </div>
+                    </td>
+                    <td>
+                        <div>
+                            <input class="form-control" name="id_7_06" ng-click="showPopap('id_7_06')" ng-model="id_7_06"
+                                   type="text">
+                        </div>
+                    </td>
+                    <td>
+                        <div>
+                            <input class="form-control" name="id_7_07" ng-click="showPopap('id_7_07')" ng-model="id_7_07"
+                                   type="text">
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div>8:00</div>
+                    </td>
+                    <td>
+                        <div>
+                            <input class="form-control" name="id_8_01" ng-click="showPopap('id_8_01')" ng-model="id_8_01"
+                                   type="text">
+                        </div>
+                    </td>
+                    <td>
+                        <div>
+                            <input class="form-control" name="id_8_02" ng-click="showPopap('id_8_02')" ng-model="id_8_02"
+                                   type="text">
+                        </div>
+                    </td>
+                    <td>
+                        <div>
+                            <input class="form-control" name="id_8_03" ng-click="showPopap('id_8_03')" ng-model="id_8_03"
+                                   type="text">
+                        </div>
+                    </td>
+                    <td>
+                        <div>
+                            <input class="form-control" name="id_8_04" ng-click="showPopap('id_8_04')" ng-model="id_8_04"
+                                   type="text">
+                        </div>
+                    </td>
+                    <td>
+                        <div>
+                            <input class="form-control" name="id_8_05" ng-click="showPopap('id_8_05')" ng-model="id_8_05"
+                                   type="text">
+                        </div>
+                    </td>
+                    <td>
+                        <div>
+                            <input class="form-control" name="id_8_06" ng-click="showPopap('id_8_06')" ng-model="id_8_06"
+                                   type="text">
+                        </div>
+                    </td>
+                    <td>
+                        <div>
+                            <input class="form-control" name="id_8_07" ng-click="showPopap('id_8_07')" ng-model="id_8_07"
+                                   type="text">
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div>9:00</div>
+                    </td>
+                    <td>
+                        <div>
+                            <input class="form-control" name="id_9_01" ng-click="showPopap('id_9_01')" ng-model="id_9_01"
+                                   type="text">
+                        </div>
+                    </td>
+                    <td>
+                        <div>
+                            <input class="form-control" name="id_9_02" ng-click="showPopap('id_9_02')" ng-model="id_9_02"
+                                   type="text">
+                        </div>
+                    </td>
+                    <td>
+                        <div>
+                            <input class="form-control" name="id_9_03" ng-click="showPopap('id_9_03')" ng-model="id_9_03"
+                                   type="text">
+                        </div>
+                    </td>
+                    <td>
+                        <div>
+                            <input class="form-control" name="id_9_04" ng-click="showPopap('id_9_04')" ng-model="id_9_04"
+                                   type="text">
+                        </div>
+                    </td>
+                    <td>
+                        <div>
+                            <input class="form-control" name="id_9_05" ng-click="showPopap('id_9_05')" ng-model="id_9_05"
+                                   type="text">
+                        </div>
+                    </td>
+                    <td>
+                        <div>
+                            <input class="form-control" name="id_9_06" ng-click="showPopap('id_9_06')" ng-model="id_9_06"
+                                   type="text">
+                        </div>
+                    </td>
+                    <td>
+                        <div>
+                            <input class="form-control" name="id_9_07" ng-click="showPopap('id_9_07')" ng-model="id_9_07"
+                                   type="text">
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div>10:00</div>
+                    </td>
+                    <td>
+                        <div>
+                            <input class="form-control" name="id_10_01" ng-click="showPopap('id_10_01')"
+                                   ng-model="id_10_01" type="text">
+                        </div>
+                    </td>
+                    <td>
+                        <div>
+                            <input class="form-control" name="id_10_02" ng-click="showPopap('id_10_02')"
+                                   ng-model="id_10_02" type="text">
+                        </div>
+                    </td>
+                    <td>
+                        <div>
+                            <input class="form-control" name="id_10_03" ng-click="showPopap('id_10_03')"
+                                   ng-model="id_10_03" type="text">
+                        </div>
+                    </td>
+                    <td>
+                        <div>
+                            <input class="form-control" name="id_10_04" ng-click="showPopap('id_10_04')"
+                                   ng-model="id_10_04" type="text">
+                        </div>
+                    </td>
+                    <td>
+                        <div>
+                            <input class="form-control" name="id_10_05" ng-click="showPopap('id_10_05')"
+                                   ng-model="id_10_05" type="text">
+                        </div>
+                    </td>
+                    <td>
+                        <div>
+                            <input class="form-control" name="id_10_06" ng-click="showPopap('id_10_06')"
+                                   ng-model="id_10_06" type="text">
+                        </div>
+                    </td>
+                    <td>
+                        <div>
+                            <input class="form-control" name="id_10_07" ng-click="showPopap('id_10_07')"
+                                   ng-model="id_10_07" type="text">
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div>11:00</div>
+                    </td>
+                    <td>
+                        <div>
+                            <input class="form-control" name="id_11_01" ng-click="showPopap('id_11_01')"
+                                   ng-model="id_11_01" type="text">
+                        </div>
+                    </td>
+                    <td>
+                        <div>
+                            <input class="form-control" name="id_11_02" ng-click="showPopap('id_11_02')"
+                                   ng-model="id_11_02" type="text">
+                        </div>
+                    </td>
+                    <td>
+                        <div>
+                            <input class="form-control" name="id_11_03" ng-click="showPopap('id_11_03')"
+                                   ng-model="id_11_03" type="text">
+                        </div>
+                    </td>
+                    <td>
+                        <div>
+                            <input class="form-control" name="id_11_04" ng-click="showPopap('id_11_04')"
+                                   ng-model="id_11_04" type="text">
+                        </div>
+                    </td>
+                    <td>
+                        <div>
+                            <input class="form-control" name="id_11_05" ng-click="showPopap('id_11_05')"
+                                   ng-model="id_11_05" type="text">
+                        </div>
+                    </td>
+                    <td>
+                        <div>
+                            <input class="form-control" name="id_11_06" ng-click="showPopap('id_11_06')"
+                                   ng-model="id_11_06" type="text">
+                        </div>
+                    </td>
+                    <td>
+                        <div>
+                            <input class="form-control" name="id_11_07" ng-click="showPopap('id_11_07')"
+                                   ng-model="id_11_07" type="text">
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div>12:00</div>
+                    </td>
+                    <td>
+                        <div id="">
+                            <input class="form-control" name="id_12_01" ng-click="showPopap('id_12_01')"
+                                   ng-model="id_12_01" type="text">
+                        </div>
+                    </td>
+                    <td>
+                        <div >
+                            <input class="form-control" name="id_12_02" ng-click="showPopap('id_12_02')"
+                                   ng-model="id_12_02" type="text">
+                        </div>
+                    </td>
+                    <td>
+                        <div>
+                            <input class="form-control" name="id_12_03" ng-click="showPopap('id_12_03')"
+                                   ng-model="id_12_03" type="text">
+                        </div>
+                    </td>
+                    <td>
+                        <div>
+                            <input class="form-control" name="id_12_04" ng-click="showPopap('id_12_04')"
+                                   ng-model="id_12_04" type="text">
+                        </div>
+                    </td>
+                    <td>
+                        <div>
+                            <input class="form-control" name="id_12_05" ng-click="showPopap('id_12_05')"
+                                   ng-model="id_12_05" type="text">
+                        </div>
+                    </td>
+                    <td>
+                        <div>
+                            <input class="form-control" name="id_12_06" ng-click="showPopap('id_12_06')"
+                                   ng-model="id_12_06" type="text">
+                        </div>
+                    </td>
+                    <td>
+                        <div>
+                            <input class="form-control" name="id_12_07" ng-click="showPopap('id_12_07')"
+                                   ng-model="id_12_07" type="text">
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div>13:00</div>
+                    </td>
+                    <td>
+                        <div>
+                            <input class="form-control" name="id_13_01" ng-click="showPopap('id_13_01')"
+                                   ng-model="id_13_01" type="text">
+                        </div>
+                    </td>
+                    <td>
+                        <div>
+                            <input class="form-control" name="id_13_02" ng-click="showPopap('id_13_02')"
+                                   ng-model="id_13_02" type="text">
+                        </div>
+                    </td>
+                    <td>
+                        <div>
+                            <input class="form-control" name="id_13_03" ng-click="showPopap('id_13_03')"
+                                   ng-model="id_13_03" type="text">
+                        </div>
+                    </td>
+                    <td>
+                        <div>
+                            <input class="form-control" name="id_13_04" ng-click="showPopap('id_13_04')"
+                                   ng-model="id_13_04" type="text">
+                        </div>
+                    </td>
+                    <td>
+                        <div>
+                            <input class="form-control" name="id_13_05" ng-click="showPopap('id_13_05')"
+                                   ng-model="id_13_05" type="text">
+                        </div>
+                    </td>
+                    <td>
+                        <div>
+                            <input class="form-control" name="id_13_06" ng-click="showPopap('id_13_06')"
+                                   ng-model="id_13_06" type="text">
+                        </div>
+                    </td>
+                    <td>
+                        <div>
+                            <input class="form-control" name="id_13_07" ng-click="showPopap('id_13_07')"
+                                   ng-model="id_13_07" type="text">
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div>14:00</div>
+                    </td>
+                    <td>
+                        <div>
+                            <input class="form-control" name="id_14_01" ng-click="showPopap('id_14_01')"
+                                   ng-model="id_14_01" type="text">
+                        </div>
+                    </td>
+                    <td>
+                        <div>
+                            <input class="form-control" name="id_14_02" ng-click="showPopap('id_14_02')"
+                                   ng-model="id_14_02" type="text">
+                        </div>
+                    </td>
+                    <td>
+                        <div>
+                            <input class="form-control" name="id_14_03" ng-click="showPopap('id_14_03')"
+                                   ng-model="id_14_03" type="text">
+                        </div>
+                    </td>
+                    <td>
+                        <div>
+                            <input class="form-control" name="id_14_04" ng-click="showPopap('id_14_04')"
+                                   ng-model="id_14_04" type="text">
+                        </div>
+                    </td>
+                    <td>
+                        <div>
+                            <input class="form-control" name="id_14_05" ng-click="showPopap('id_14_05')"
+                                   ng-model="id_14_05" type="text">
+                        </div>
+                    </td>
+                    <td>
+                        <div>
+                            <input class="form-control" name="id_14_06" ng-click="showPopap('id_14_06')"
+                                   ng-model="id_14_06" type="text">
+                        </div>
+                    </td>
+                    <td>
+                        <div>
+                            <input class="form-control" name="id_14_07" ng-click="showPopap('id_14_07')"
+                                   ng-model="id_14_07" type="text">
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div>15:00</div>
+                    </td>
+                    <td>
+                        <div>
+                            <input class="form-control" name="id_15_01" ng-click="showPopap('id_15_01')"
+                                   ng-model="id_15_01" type="text">
+                        </div>
+                    </td>
+                    <td>
+                        <div>
+                            <input class="form-control" name="id_15_02" ng-click="showPopap('id_15_02')"
+                                   ng-model="id_15_02" type="text">
+                        </div>
+                    </td>
+                    <td>
+                        <div>
+                            <input class="form-control" name="id_15_03" ng-click="showPopap('id_15_03')"
+                                   ng-model="id_15_03" type="text">
+                        </div>
+                    </td>
+                    <td>
+                        <div>
+                            <input class="form-control" name="id_15_04" ng-click="showPopap('id_15_04')"
+                                   ng-model="id_15_04" type="text">
+                        </div>
+                    </td>
+                    <td>
+                        <div>
+                            <input class="form-control" name="id_15_05" ng-click="showPopap('id_15_05')"
+                                   ng-model="id_15_05" type="text">
+                        </div>
+                    </td>
+                    <td>
+                        <div>
+                            <input class="form-control" name="id_15_06" ng-click="showPopap('id_15_06')"
+                                   ng-model="id_15_06" type="text">
+                        </div>
+                    </td>
+                    <td>
+                        <div>
+                            <input class="form-control" name="id_15_07" ng-click="showPopap('id_15_07')"
+                                   ng-model="id_15_07" type="text">
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div>16:00</div>
+                    </td>
+                    <td>
+                        <div>
+                            <input class="form-control" name="id_16_01" ng-click="showPopap('id_16_01')"
+                                   ng-model="id_16_01" type="text">
+                        </div>
+                    </td>
+                    <td>
+                        <div>
+                            <input class="form-control" name="id_16_02" ng-click="showPopap('id_16_02')"
+                                   ng-model="id_16_02" type="text">
+                        </div>
+                    </td>
+                    <td>
+                        <div>
+                            <input class="form-control" name="id_16_03" ng-click="showPopap('id_16_03')"
+                                   ng-model="id_16_03" type="text">
+                        </div>
+                    </td>
+                    <td>
+                        <div>
+                            <input class="form-control" name="id_16_04" ng-click="showPopap('id_16_04')"
+                                   ng-model="id_16_04" type="text">
+                        </div>
+                    </td>
+                    <td>
+                        <div>
+                            <input class="form-control" name="id_16_05" ng-click="showPopap('id_16_05')"
+                                   ng-model="id_16_05" type="text">
+                        </div>
+                    </td>
+                    <td>
+                        <div>
+                            <input class="form-control" name="id_16_06" ng-click="showPopap('id_16_06')"
+                                   ng-model="id_16_06" type="text">
+                        </div>
+                    </td>
+                    <td>
+                        <div>
+                            <input class="form-control" name="id_16_07" ng-click="showPopap('id_16_07')"
+                                   ng-model="id_16_07" type="text">
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div>17:00</div>
+                    </td>
+                    <td>
+                        <div>
+                            <input class="form-control" name="id_17_01" ng-click="showPopap('id_17_01')"
+                                   ng-model="id_17_01" type="text">
+                        </div>
+                    </td>
+                    <td>
+                        <div>
+                            <input class="form-control" name="id_17_02" ng-click="showPopap('id_17_02')"
+                                   ng-model="id_17_02" type="text">
+                        </div>
+                    </td>
+                    <td>
+                        <div>
+                            <input class="form-control" name="id_17_03" ng-click="showPopap('id_17_03')"
+                                   ng-model="id_17_03" type="text">
+                        </div>
+                    </td>
+                    <td>
+                        <div>
+                            <input class="form-control" name="id_17_04" ng-click="showPopap('id_17_04')"
+                                   ng-model="id_17_04" type="text">
+                        </div>
+                    </td>
+                    <td>
+                        <div>
+                            <input class="form-control" name="id_17_05" ng-click="showPopap('id_17_05')"
+                                   ng-model="id_17_05" type="text">
+                        </div>
+                    </td>
+                    <td>
+                        <div>
+                            <input class="form-control" name="id_17_06" ng-click="showPopap('id_17_06')"
+                                   ng-model="id_17_06" type="text">
+                        </div>
+                    </td>
+                    <td>
+                        <div>
+                            <input class="form-control" name="id_17_07" ng-click="showPopap('id_17_07')"
+                                   ng-model="id_17_07" type="text">
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div>18:00</div>
+                    </td>
+                    <td>
+                        <div>
+                            <input class="form-control" name="id_18_01" ng-click="showPopap('id_18_01')"
+                                   ng-model="id_18_01" type="text">
+                        </div>
+                    </td>
+                    <td>
+                        <div>
+                            <input class="form-control" name="id_18_02" ng-click="showPopap('id_18_02')"
+                                   ng-model="id_18_02" type="text">
+                        </div>
+                    </td>
+                    <td>
+                        <div>
+                            <input class="form-control" name="id_18_03" ng-click="showPopap('id_18_03')"
+                                   ng-model="id_18_03" type="text">
+                        </div>
+                    </td>
+                    <td>
+                        <div>
+                            <input class="form-control" name="id_18_04" ng-click="showPopap('id_18_04')"
+                                   ng-model="id_18_04" type="text">
+                        </div>
+                    </td>
+                    <td>
+                        <div>
+                            <input class="form-control" name="id_18_05" ng-click="showPopap('id_18_05')"
+                                   ng-model="id_18_05" type="text">
+                        </div>
+                    </td>
+                    <td>
+                        <div>
+                            <input class="form-control" name="id_18_06" ng-click="showPopap('id_18_06')"
+                                   ng-model="id_18_06" type="text">
+                        </div>
+                    </td>
+                    <td>
+                        <div>
+                            <input class="form-control" name="id_18_07" ng-click="showPopap('id_18_07')"
+                                   ng-model="id_18_07" type="text">
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div>19:00</div>
+                    </td>
+                    <td>
+                        <div>
+                            <input class="form-control" name="id_19_01" ng-click="showPopap('id_19_01')"
+                                   ng-model="id_19_01" type="text">
+                        </div>
+                    </td>
+                    <td>
+                        <div>
+                            <input class="form-control" name="id_19_02" ng-click="showPopap('id_19_02')"
+                                   ng-model="id_19_02" type="text">
+                        </div>
+                    </td>
+                    <td>
+                        <div>
+                            <input class="form-control" name="id_19_03" ng-click="showPopap('id_19_03')"
+                                   ng-model="id_19_03" type="text">
+                        </div>
+                    </td>
+                    <td>
+                        <div>
+                            <input class="form-control" name="id_19_04" ng-click="showPopap('id_19_04')"
+                                   ng-model="id_19_04"
+                                   type="text">
+                        </div>
+                    </td>
+                    <td>
+                        <div>
+                            <input class="form-control" name="id_19_05" ng-click="showPopap('id_19_05')"
+                                   ng-model="id_19_05" type="text">
+                        </div>
+                    </td>
+                    <td>
+                        <div>
+                            <input class="form-control" name="id_19_06" ng-click="showPopap('id_19_06')"
+                                   ng-model="id_19_06" type="text">
+                        </div>
+                    </td>
+                    <td>
+                        <div>
+                            <input class="form-control" name="id_19_07" ng-click="showPopap('id_19_07')"
+                                   ng-model="id_19_07" type="text">
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div>20:00</div>
+                    </td>
+                    <td>
+                        <div id="">
+                            <input class="form-control" name="id_20_01" ng-click="showPopap('id_20_01')"
+                                   ng-model="id_20_01"
+                                   type="text">
+                        </div>
+                    </td>
+                    <td>
+                        <div>
+                            <input class="form-control" name="id_20_02" ng-click="showPopap('id_20_02')"
+                                   ng-model="id_20_02"
+                                   type="text">
 
-        <table class="table">
-                        <tr>
+                        </div>
+                    </td>
+                    <td>
+                        <div>
+                            <input class="form-control" name="id_20_03" ng-click="showPopap('id_20_03')"
+                                   ng-model="id_20_03"
+                                   type="text">
+                        </div>
+                    </td>
+                    <td>
+                        <div id="">
+                            <input class="form-control" name="id_20_04" ng-click="showPopap('id_20_04')"
+                                   ng-model="id_20_04"
+                                   type="text">
+                        </div>
+                    </td>
+                    <td>
+                        <div>
+                            <input class="form-control" name="id_20_05" ng-click="showPopap('id_20_05')"
+                                   ng-model="id_20_05"
+                                   type="text">
+                        </div>
+                    </td>
+                    <td>
+                        <div>
+                            <input class="form-control" name="id_20_06" ng-click="showPopap('id_20_06')"
+                                   ng-model="id_20_06"
+                                   type="text">
+                        </div>
+                    </td>
+                    <td>
+                        <div>
+                            <input class="form-control" name="id_20_07" ng-click="showPopap('id_20_07')"
+                                   ng-model="id_20_07"
+                                   type="text">
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div>21:00</div>
+                    </td>
+                    <td>
+                        <div>
+                            <input class="form-control" name="id_21_01" ng-click="showPopap('id_21_01')"
+                                   ng-model="id_21_01"
+                                   type="text">
+                        </div>
+                    </td>
+                    <td>
+                        <div>
+                            <input class="form-control" name="id_21_02" ng-click="showPopap('id_21_02')"
+                                   ng-model="id_21_02"
+                                   type="text">
+                        </div>
+                    </td>
+                    <td>
+                        <div>
+                            <input class="form-control" name="id_21_03" ng-click="showPopap('id_21_03')"
+                                   ng-model="id_21_03"
+                                   type="text">
+                        </div>
+                    </td>
+                    <td>
+                        <div>
+                            <input class="form-control" name="id_21_04" ng-click="showPopap('id_21_04')"
+                                   ng-model="id_21_04"
+                                   type="text">
+                        </div>
+                    </td>
+                    <td>
+                        <div>
+                            <input class="form-control" name="id_21_05" ng-click="showPopap('id_21_05')"
+                                   ng-model="id_21_05"
+                                   type="text">
+                        </div>
+                    </td>
+                    <td>
+                        <div>
+                            <input class="form-control" name="id_21_06" ng-click="showPopap('id_21_06')"
+                                   ng-model="id_21_06"
+                                   type="text">
+                        </div>
+                    </td>
+                    <td>
+                        <div>
+                            <input class="form-control" name="id_21_07" ng-click="showPopap('id_21_07')"
+                                   ng-model="id_21_07"
+                                   type="text">
+                        </div>
+                    </td>
+                </tr>
 
-                            <td>
-                                <div></div>
-                            </td>
-                            <td>
-                                <div>Пн</div>
-                            </td>
-                            <td>
-                                <div>Вт</div>
-                            </td>
-                            <td>
-                                <div>Ср</div>
-                            </td>
-                            <td>
-                                <div>Чт</div>
-                            </td>
-                            <td>
-                                <div>Пт</div>
-                            </td>
-                            <td>
-                                <div>Сб</div>
-                            </td>
-                            <td>
-                                <div>Вс</div>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <div>6:00</div>
-                            </td>
-                            <td>
-                                <div>
-                                    <input class="form-control" id="id_5_01" ng-click="showPopap('id_5_01')" ng-model="id_5_01"  type="text">
-                                </div>
-                            </td>
-                            <td>
-                                <div >
-                                    <input class="form-control" id="id_5_02" ng-click="showPopap('id_5_02')" ng-model="id_5_01"  type="text">
-                                </div>
-                            </td>
-                            <td>
-                                <div >
-                                    <input class="form-control" id="id_5_03" ng-click="showPopap('id_5_03')" ng-model="id_5_01"  type="text">
-                                </div>
-                            </td>
-                            <td>
-                                <div >
-                                    <input class="form-control" id="id_5_04" ng-click="showPopap('id_5_04')" ng-model="id_5_01"  type="text">
-                                </div>
-                            </td>
-                            <td>
-                                <div>
-                                    <input class="form-control" id="id_5_05" ng-click="showPopap('id_5_05')" ng-model="id_5_01"  type="text">
-                                </div>
-                            </td>
-                            <td>
-                                <div >
-                                    <input class="form-control" id="id_5_06" ng-click="showPopap('id_5_06')" ng-model="id_5_01"  type="text">
-                                </div>
-                            </td>
-                            <td>
-                                <div >
-                                    <input class="form-control" id="id_5_07" ng-click="showPopap('id_5_07')" ng-model="id_5_01"  type="text">
-                                </div>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <div>7:00</div>
-                            </td>
-                            <td>
-                                <div id="id_6_01"></div>
-                            </td>
-                            <td>
-                                <div id="id_6_02"></div>
-                            </td>
-                            <td>
-                                <div id="id_6_03"></div>
-                            </td>
-                            <td>
-                                <div id="id_6_04"></div>
-                            </td>
-                            <td>
-                                <div id="id_6_05"></div>
-                            </td>
-                            <td>
-                                <div id="id_6_06"></div>
-                            </td>
-                            <td>
-                                <div id="id_6_07"></div>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <div>8:00</div>
-                            </td>
-                            <td>
-                                <div id="id_7_01"></div>
-                            </td>
-                            <td>
-                                <div id="id_7_02"></div>
-                            </td>
-                            <td>
-                                <div id="id_7_03"></div>
-                            </td>
-                            <td>
-                                <div id="id_7_04"></div>
-                            </td>
-                            <td>
-                                <div id="id_7_05"></div>
-                            </td>
-                            <td>
-                                <div id="id_7_06"></div>
-                            </td>
-                            <td>
-                                <div id="id_7_07"></div>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <div>9:00</div>
-                            </td>
-                            <td>
-                                <div id="id_8_01"></div>
-                            </td>
-                            <td>
-                                <div id="id_8_02"></div>
-                            </td>
-                            <td>
-                                <div id="id_8_03"></div>
-                            </td>
-                            <td>
-                                <div id="id_8_04"></div>
-                            </td>
-                            <td>
-                                <div id="id_8_05"></div>
-                            </td>
-                            <td>
-                                <div id="id_8_06"></div>
-                            </td>
-                            <td>
-                                <div id="id_8_07"></div>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <div>10:00</div>
-                            </td>
-                            <td>
-                                <div id="id_9_01"></div>
-                            </td>
-                            <td>
-                                <div id="id_9_02"></div>
-                            </td>
-                            <td>
-                                <div id="id_9_03"></div>
-                            </td>
-                            <td>
-                                <div id="id_9_04"></div>
-                            </td>
-                            <td>
-                                <div id="id_9_05"></div>
-                            </td>
-                            <td>
-                                <div id="id_9_06"></div>
-                            </td>
-                            <td>
-                                <div id="id_9_07"></div>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <div>11:00</div>
-                            </td>
-                            <td>
-                                <div id="id_10_01"></div>
-                            </td>
-                            <td>
-                                <div id="id_10_02"></div>
-                            </td>
-                            <td>
-                                <div id="id_10_03"></div>
-                            </td>
-                            <td>
-                                <div id="id_10_04"></div>
-                            </td>
-                            <td>
-                                <div id="id_10_05"></div>
-                            </td>
-                            <td>
-                                <div id="id_10_06"></div>
-                            </td>
-                            <td>
-                                <div id="id_10_07"></div>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <div>12:00</div>
-                            </td>
-                            <td>
-                                <div id="id_11_01"></div>
-                            </td>
-                            <td>
-                                <div id="id_11_02"></div>
-                            </td>
-                            <td>
-                                <div id="id_11_03"></div>
-                            </td>
-                            <td>
-                                <div id="id_11_04"></div>
-                            </td>
-                            <td>
-                                <div id="id_11_05"></div>
-                            </td>
-                            <td>
-                                <div id="id_11_06"></div>
-                            </td>
-                            <td>
-                                <div id="id_11_07"></div>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <div>13:00</div>
-                            </td>
-                            <td>
-                                <div id="id_12_01"></div>
-                            </td>
-                            <td>
-                                <div id="id_12_02"></div>
-                            </td>
-                            <td>
-                                <div id="id_12_03"></div>
-                            </td>
-                            <td>
-                                <div id="id_12_04"></div>
-                            </td>
-                            <td>
-                                <div id="id_12_05"></div>
-                            </td>
-                            <td>
-                                <div id="id_12_06"></div>
-                            </td>
-                            <td>
-                                <div id="id_12_07"></div>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <div>14:00</div>
-                            </td>
-                            <td>
-                                <div id="id_13_01"></div>
-                            </td>
-                            <td>
-                                <div id="id_13_02"></div>
-                            </td>
-                            <td>
-                                <div id="id_13_03"></div>
-                            </td>
-                            <td>
-                                <div id="id_13_04"></div>
-                            </td>
-                            <td>
-                                <div id="id_13_05"></div>
-                            </td>
-                            <td>
-                                <div id="id_13_06"></div>
-                            </td>
-                            <td>
-                                <div id="id_13_07"></div>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <div>15:00</div>
-                            </td>
-                            <td>
-                                <div id="id_14_01"></div>
-                            </td>
-                            <td>
-                                <div id="id_14_02"></div>
-                            </td>
-                            <td>
-                                <div id="id_14_03"></div>
-                            </td>
-                            <td>
-                                <div id="id_14_04"></div>
-                            </td>
-                            <td>
-                                <div id="id_14_05"></div>
-                            </td>
-                            <td>
-                                <div id="id_14_06"></div>
-                            </td>
-                            <td>
-                                <div id="id_14_07"></div>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <div>16:00</div>
-                            </td>
-                            <td>
-                                <div id="id_15_01"></div>
-                            </td>
-                            <td>
-                                <div id="id_15_02"></div>
-                            </td>
-                            <td>
-                                <div id="id_15_03"></div>
-                            </td>
-                            <td>
-                                <div id="id_15_04"></div>
-                            </td>
-                            <td>
-                                <div id="id_15_05"></div>
-                            </td>
-                            <td>
-                                <div id="id_15_06"></div>
-                            </td>
-                            <td>
-                                <div id="id_15_07"></div>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <div>17:00</div>
-                            </td>
-                            <td>
-                                <div id="id_16_01"></div>
-                            </td>
-                            <td>
-                                <div id="id_16_02"></div>
-                            </td>
-                            <td>
-                                <div id="id_16_03"></div>
-                            </td>
-                            <td>
-                                <div id="id_16_04"></div>
-                            </td>
-                            <td>
-                                <div id="id_16_05"></div>
-                            </td>
-                            <td>
-                                <div id="id_16_06"></div>
-                            </td>
-                            <td>
-                                <div id="id_16_07"></div>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <div>18:00</div>
-                            </td>
-                            <td>
-                                <div id="id_17_01"></div>
-                            </td>
-                            <td>
-                                <div id="id_17_02"></div>
-                            </td>
-                            <td>
-                                <div id="id_17_03"></div>
-                            </td>
-                            <td>
-                                <div id="id_17_04"></div>
-                            </td>
-                            <td>
-                                <div id="id_17_05"></div>
-                            </td>
-                            <td>
-                                <div id="id_17_06"></div>
-                            </td>
-                            <td>
-                                <div id="id_17_07"></div>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <div>19:00</div>
-                            </td>
-                            <td>
-                                <div id="id_18_01"></div>
-                            </td>
-                            <td>
-                                <div id="id_18_02"></div>
-                            </td>
-                            <td>
-                                <div id="id_18_03"></div>
-                            </td>
-                            <td>
-                                <div id="id_18_04"></div>
-                            </td>
-                            <td>
-                                <div id="id_18_05"></div>
-                            </td>
-                            <td>
-                                <div id="id_18_06"></div>
-                            </td>
-                            <td>
-                                <div id="id_18_07"></div>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <div>20:00</div>
-                            </td>
-                            <td>
-                                <div id="id_19_01"></div>
-                            </td>
-                            <td>
-                                <div id="id_19_02"></div>
-                            </td>
-                            <td>
-                                <div id="id_19_03"></div>
-                            </td>
-                            <td>
-                                <div id="id_19_04"></div>
-                            </td>
-                            <td>
-                                <div id="id_19_05"></div>
-                            </td>
-                            <td>
-                                <div id="id_19_06"></div>
-                            </td>
-                            <td>
-                                <div id="id_19_07"></div>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <div>21:00</div>
-                            </td>
-                            <td>
-                                <div id="id_20_01"></div>
-                            </td>
-                            <td>
-                                <div id="id_20_02"></div>
-                            </td>
-                            <td>
-                                <div id="id_20_03"></div>
-                            </td>
-                            <td>
-                                <div id="id_20_04"></div>
-                            </td>
-                            <td>
-                                <div id="id_20_05"></div>
-                            </td>
-                            <td>
-                                <div id="id_20_06"></div>
-                            </td>
-                            <td>
-                                <div id="id_20_07"></div>
-                            </td>
-                        </tr>
-                    </table>
+            </table>
+        </form>
+    </div>
+</div>
 
+<div class="container">
+    <div class="row">
+        {{scheluder| json}}
     </div>
 </div>
 

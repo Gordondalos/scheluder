@@ -6,16 +6,16 @@ main.controller('mainController', ['$scope', function ($scope) {
           $idGroupSelect = $scope.groupSelect;
           id = $scope.inputId;
           $("#"+id).val($idGroupSelect);
-          $('form').parent().hide();
+          $('form.popap').parent().hide();
     };
 
     $scope.closePopap = function(){
-        $('form').parent().hide();
+        $('form.popap').parent().hide();
     };
     $scope.showPopap = function(id){
         $scope.inputId = id;
 
-        $('form').parent().show();
+        $('form.popap').parent().show();
     };
 
     $scope.groups = [
